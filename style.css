@@ -1,0 +1,232 @@
+/* Root Variables */
+:root {
+    --primary-color: #0086d8 ;/* Blue */
+    --secondary-color: rgb(0, 195, 0); /* Green */
+    --text-color: #fff; /* White text */
+    --background-color: #000; /* Black background for sections */
+    --font-family: Arial, sans-serif;
+    --border-radius: 8px;
+    --shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Global Styles */
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-image: url('bag\ img.png'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--text-color);
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+    min-height: 100vh;
+}
+
+h1,h2 {
+    color: var(--secondary-color) ;
+}
+/* Header Styles */
+header {
+    background-color: rgba(51, 51, 51, 0.95); /* Transparent dark background */
+    color: var(--white);
+    padding: 10px 0;
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+
+header h1 {
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 60px 20px; /* Reduced padding */
+    background-color: rgba(0, 0, 0, 0.5); /* Slight background opacity */
+    background-size: cover;
+    background-position: center;
+    color: var(--white);
+}
+
+.hero h2 {
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin-top: 20px;
+}
+
+/* Section Styles */
+section {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 900px;
+    background-color: var(--background-color); /* Black background */
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+}
+
+/* Portfolio Section */
+.project {
+    border: 1px solid rgb(0, 195, 0);
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+}
+
+/* Resume Section */
+video {
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input,
+form textarea,
+form button {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius);
+}
+
+form input,
+form textarea {
+    width: 100%;
+}
+
+form button {
+    background-color: var(--primary-color); /* Green button */
+    color: var(--white);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: darken(var(--primary-color), 10%);
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    background-color: rgba(51, 51, 51, 0.8);
+    color: var(--white);
+    padding: 10px 0;
+    margin-top: 20px;
+    backdrop-filter: blur(10px);
+}
+
+/* Responsive Styles */
+
+/* For Tablets */
+@media (max-width: 1024px) {
+    .hero {
+        padding: 80px 20px;
+    }
+
+    header nav ul li {
+        margin: 0 10px;
+    }
+
+    header nav ul li a {
+        font-size: 1.1rem;
+    }
+
+    section {
+        padding: 15px;
+        max-width: 90%;
+    }
+
+    .project {
+        padding: 12px;
+    }
+
+    form input,
+    form textarea,
+    form button {
+        font-size: 1rem;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+}
+
+/* For Mobile Phones */
+@media (max-width: 768px) {
+    .hero {
+        padding: 60px 10px;
+    }
+
+    header nav ul {
+        text-align: center;
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    header nav ul li a {
+        font-size: 1rem;
+    }
+
+    section {
+        padding: 10px;
+        max-width: 95%;
+    }
+
+    .hero h2 {
+        font-size: 1.75rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    form input,
+    form textarea,
+    form button {
+        font-size: 0.9rem;
+    }
+}
