@@ -22,6 +22,26 @@ body {
     line-height: 1.6;
 }
 
+/* Prevent text selection on the entire page */
+body {
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE/Edge */
+    user-select: none; /* Standard syntax */
+}
+
+/* Allow text selection only in specific elements (if needed) */
+input,
+textarea,
+.hero-content,
+.product-card,
+.footer-content {
+    -webkit-user-select: text; /* Safari */
+    -moz-user-select: text; /* Firefox */
+    -ms-user-select: text; /* IE/Edge */
+    user-select: text; /* Standard syntax */
+}
+
 .container {
     width: 90%;
     max-width: 1200px;
