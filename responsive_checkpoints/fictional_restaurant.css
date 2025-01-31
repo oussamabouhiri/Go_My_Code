@@ -1,0 +1,177 @@
+:root {
+    --primary-color: #FF5733; /* Light Orange */
+    --secondary-color: #C70039; /* Warm Red */
+    --light-color: #FFF3E6; /* Light color suitable for food */
+    --accent-color: #FFB03B; /* Light Yellow that adds vibrancy */
+}
+
+body {
+    background: url('table-food.jpg') no-repeat center center fixed;
+    background-color: var(--light-color);
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+/* Navbar */
+
+.navbar {
+    background-color: var(--secondary-color) !important;
+}
+
+.navbar-brand, .nav-link {
+    color: white !important;
+    font-weight: 600;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+}
+
+/* Hero Section */
+.hero-section {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    transition: background-color 0.3s ease;
+}
+
+/* Responsive Hero Section */
+@media (max-width: 768px) {
+    .hero-section {
+        height: 70vh;
+        font-size: 1.2rem;
+    }
+}
+
+
+
+/* Card Styling */
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Move card up on hover */
+}
+
+.card-title {
+    color: var(--primary-color);
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.card:hover .card-title {
+    color: var(--accent-color); /* Change title color on hover */
+}
+
+.price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+    transition: color 0.3s ease;
+}
+
+.card:hover .price {
+    color: var(--primary-color); /* Change price color on hover */
+}
+
+/* Footer */
+footer {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 2rem 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--accent-color); /* Change the hover color to match accent color */
+}
+
+/* Social Icons */
+.social-icons {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.social-icon {
+    margin: 0 10px;
+    color: white;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: var(--primary-color); /* Hover effect to change color */
+    transform: scale(1.2); /* Slightly enlarge the icon */
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+    footer .social-icons {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    footer .social-icon {
+        font-size: 2rem;
+    }
+}
+
+
+/* Menu items animation */
+.navbar-nav {
+    opacity: 0;
+    transform: translateY(-30px);
+    animation: slideIn 0.5s forwards;
+}
+
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Smooth scroll for page */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Prevent unwanted selection during scrolling */
+* {
+    user-select: none; /* Disable text selection */
+}
+
+/* Button hover effects */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    transform: scale(1.1); /* Grow button size on hover */
+}
+
