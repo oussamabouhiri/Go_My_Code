@@ -1,0 +1,46 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 20px;
+}
+
+.card {
+  background-color: white;
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 400px;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.25rem;
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #6c757d;
+}
+.product-card {
+  width: 18rem; /* Set a fixed width for the card */
+  margin: 0 auto; /* Center the card horizontally */
+  border-radius: 8px; /* Optional: Add rounded corners */
+  overflow: hidden; /* Ensure content stays within the card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow for better visuals */
+}
+
+/* Style for the image */
+.product-card img {
+  width: 55%; /* Make the image take the full width of the card */
+  height: auto; /* Maintain the aspect ratio */
+  object-fit: cover; /* Ensure the image fits nicely within the card */
+}
