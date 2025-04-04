@@ -1,0 +1,99 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f4f8;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 90%;
+  max-width: 600px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  color: #333333;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  color: #555555;
+}
+
+input[type="text"] {
+  width: 70%;
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f9f9f9;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.task span {
+  flex: 1;
+  text-align: left;
+  font-size: 1rem;
+  color: #555555;
+}
+
+.task span.done {
+  text-decoration: line-through;
+  color: #999999;
+}
+
+.task button {
+  margin-left: 10px;
+}
+
+.filter-buttons {
+  margin-top: 20px;
+}
+
+.filter-buttons button {
+  margin: 0 5px;
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  background-color: #6c757d;
+}
+
+.filter-buttons button.active {
+  background-color: #007bff;
+  color: white;
+}
