@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "jsx": "react", // Keep only one jsx option
+        "module": "esnext", // or "commonjs" depending on your environment
+        "target": "es6",    // or a higher version like "es2017"
+        "strict": true,
+        "esModuleInterop": true, // Ensures compatibility with ES modules
+        "allowSyntheticDefaultImports": true, // Allows default imports
+        "outDir": "./dist" // Specify output directory for compiled JavaScript
+    }
+}
