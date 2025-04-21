@@ -7,9 +7,12 @@ const {
   deleteTask,
 } = require("../controllers/taskController");
 
-router.get("/", getTasks);
-router.post("/", createTask);
-router.put("/:id", updateTask);
-router.delete("/:id", deleteTask);
+const verifyToken = require("../middleware/authMiddleware"); // Protect routes
+
+// All task routes now require authentication
+router.get("/", verifyToken, getTasks);
+router.post("/", verifyToken, createTask);
+router.put("/:id", verifyToken, updateTask);
+router.delete("/:id", verifyToken, deleteTask);
 
 module.exports = router;
